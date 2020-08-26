@@ -253,7 +253,7 @@ class DeformConv(nn.Module):
         return out
 
 
-@CONV_LAYERS.register_module('DCN')
+@CONV_LAYERS.register_module('DCN', force=True)
 class DeformConvPack(DeformConv):
     """A Deformable Conv Encapsulation that acts as normal Conv layers.
 
