@@ -381,7 +381,7 @@ class ModulatedDeformConv(nn.Module):
                                      self.groups, self.deformable_groups)
 
 
-@CONV_LAYERS.register_module('DCNv2')
+@CONV_LAYERS.register_module('DCNv2', force=True)
 class ModulatedDeformConvPack(ModulatedDeformConv):
     """A ModulatedDeformable Conv Encapsulation that acts as normal Conv layers.
 

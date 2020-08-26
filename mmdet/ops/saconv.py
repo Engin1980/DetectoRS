@@ -6,7 +6,7 @@ from .dcn import deform_conv
 from mmcv.cnn import CONV_LAYERS
 
 
-@CONV_LAYERS.register_module('SAC')
+@CONV_LAYERS.register_module('SAC', force=True)
 class SAConv2d(ConvAWS2d):
     """SAC (Switchable Atrous Convolution)
 
